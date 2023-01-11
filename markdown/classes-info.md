@@ -1,0 +1,2 @@
+Iterm
+oh my zsh
