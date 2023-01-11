@@ -7,3 +7,5 @@
 - Git pull (from GitHub in your terminal)
 - Git merge you put the information you are woking on in main
 - Git branch -m (change name of branches)
+
+Git-cli : command line interface
