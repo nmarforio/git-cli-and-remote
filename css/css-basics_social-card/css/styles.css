@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+article {
+  background-color: white;
+}
+
+body {
+  border: 1rem solid;
+  border-radius: 15px;
+  border-color: white;
+  background-color: grey;
+}
+img {
+  border-radius: 15px;
+}
+button {
+  border: none;
+  border-radius: 35px;
+  color: deepskyblue;
+  background: none;
+}
+
+h2,
+p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  text-transform: uppercase;
+}
