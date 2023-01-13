@@ -1,0 +1,46 @@
+/*
+Use flexbox to fulfill the following tasks:
+
+The profile section contains a level 2 heading, an image and an about text.
+[ ] - The image should be centered
+
+The tech-stack-list needs to be polished!
+[ ] - Each listitem should be as wide as its characters plus padding.
+[ ] - There should be a gap of at least 10px between every tech-stack entry
+[ ] - Listitems should wrap to the next line, if there is not enough space horizontally
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+.main__title {
+  padding: 10px;
+  background: lightcyan;
+}
+
+.profile__image {
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  max-width: 50%;
+  height: auto;
+  margin: auto;
+}
+
+.tech-stack__list {
+  list-style: none;
+  padding-left: 0;
+  width: fit-content;
+  text-align: center;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tech-stack__list-item {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
