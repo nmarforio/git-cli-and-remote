@@ -32,3 +32,25 @@ div : before used to put some emojie or whatever element before the tag in this 
 
 > refers to the direct children of the parent
 > cake.list li: the space between the 2 names mean all the children under the cake.list also not direct child
+
+Using FELXBOX
+.class{
+display: flex;
+}
+
+Positioning:
+element {
+position: static; (default)
+}
+element{
+position: relativ; without relativ no movement, with it you can move the element
+left/right: 65px;
+}
+position: absolut; is another layer on top of your website-conected always wiht the last relativ position
+
+position: fix; is fixed on the website and doesn't metter if you scroll or do whatever
+
+position: sticky; the element is a sticker so is sticked where we decide ex: bottom or top
+top/bottom: 0
+
+z-index: mean if this element appire in front or behind the other element
