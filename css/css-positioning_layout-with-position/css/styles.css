@@ -7,7 +7,7 @@
 body {
   display: flex;
   flex-direction: column;
-  margin: 80px 0 45px 0;
+  margin: 0;
   font-family: system-ui;
 }
 
@@ -24,6 +24,7 @@ body {
   padding: 10px;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 .header__text {
@@ -96,7 +97,6 @@ body {
   align-items: center;
   justify-content: center;
   position: fixed;
-  bottom: 10px;
+  bottom: 50px;
   right: 0;
-  z-index: 1;
 }
