@@ -54,3 +54,16 @@ position: sticky; the element is a sticker so is sticked where we decide ex: bot
 top/bottom: 0
 
 z-index: mean if this element appire in front or behind the other element
+
+Cascade/specificity:
+if you have more then one style for the same element, is the second one in the css doc to be applied is a cascade
+
+the class has a bigger specificity then a normal tag es h1 or .heading(win)
+2classes are better then one
+id is better then any classes
+
+https://getbem.com
+
+if you wanna select a spefici elemente in your css block like the quiz app cards
+you do: .card**button(double underscore) is selecting the element !!!HTLM NEED THE SPESIFIC NAME TOO!!
+ES: <img class="card**imagine"> css .card\_\_imagine{}
