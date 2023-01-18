@@ -67,3 +67,12 @@ https://getbem.com
 if you wanna select a spefici elemente in your css block like the quiz app cards
 you do: .card**button(double underscore) is selecting the element !!!HTLM NEED THE SPESIFIC NAME TOO!!
 ES: <img class="card**imagine"> css .card\_\_imagine{}
+
+CSS Grid:
+use gap instade margin
+span is for cells 2
+lines grid-cloumn: 1/3 from line 1 to 3 which is 2 cells
+
+CSS Area
+template is in "string"
+asign the area to the element is normal no ""
