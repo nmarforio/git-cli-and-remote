@@ -30,4 +30,9 @@ console.log((likes += 1));
 console.log(user);
 console.log(isReported);
 
+//for the likes so:
+likes++;
+//then you can add it in the object
+console.log({ title, text, likes, user, isReported });
+
 // --^-- write your code here --^--
