@@ -12,8 +12,8 @@ We want to add some functionality to the buttons on this page. When pressing a b
 */
 
 redButton.addEventListener("click", () => {
-  addColor("red", box);
   // Code here
+  addColor("red", box);
 });
 
 blueButton.addEventListener("click", () => {
