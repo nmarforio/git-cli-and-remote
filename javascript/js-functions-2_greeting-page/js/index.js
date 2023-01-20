@@ -25,9 +25,11 @@ function getGreeting() {
   const time = new Date().getHours();
   if (time >= 6 && time <= 12) {
     return "Good Morning";
-  } else if (time >= 13 && time <= 18) {
+  }
+  if (time >= 13 && time <= 18) {
     return "Good Afternoon";
-  } else if (time >= 19 && time <= 22) {
+  }
+  if (time >= 19 && time <= 22) {
     return "Good evening";
   } else {
     return "Good Night";
@@ -43,7 +45,7 @@ function getDayColor() {
     return "darkgray";
   } else if (day === 2 || day === 3 || day === 4 || day === 5) {
     return "lightblue";
-  } else day === 6 || day === 7;
+  } else day === 6 || day === 0; //0 is sunday
   {
     return "hotpink";
   }

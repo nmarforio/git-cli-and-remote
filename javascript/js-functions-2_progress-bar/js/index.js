@@ -20,6 +20,7 @@ For that:
 */
 
 const progressBar = document.querySelector('[data-js="progress-bar"]');
+
 document.addEventListener("scroll", () => {
   progressBar.style.width = calculateScrollPercentage();
 });
@@ -27,11 +28,9 @@ document.addEventListener("scroll", () => {
 function calculateScrollPercentage() {
   const y = window.scrollY;
 
-  const height = window.innerHeight;
-  const webpage = document.body.clientHeight;
+  const position = document.body.clientHeight - window.innerHeight;
 
-  let position = webpage - height;
-  let result = Math.floor((y / position) * 100); // math.floor mi da un integer
+  const result = Math.floor((y / position) * 100); // math.floor mi da un integer statt float
 
   console.log(result);
   return result + "%"; // usare % come unità di misura, il risultato viene passato nel eventlistener

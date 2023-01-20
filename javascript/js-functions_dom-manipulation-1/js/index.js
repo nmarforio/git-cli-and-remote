@@ -18,14 +18,17 @@ redButton.addEventListener("click", () => {
 
 blueButton.addEventListener("click", () => {
   // Code here
+  addColor("blue", box);
 });
 
 greenButton.addEventListener("click", () => {
   // Code here
+  addColor("green", box);
 });
 
 grayButton.addEventListener("click", () => {
   // Code here
+  addColor("gray", box);
 });
 
 // Write your two functions below:

@@ -36,16 +36,13 @@ function getVectorLength(x, y, z) {
   return (x ** 2 + y ** 2 + z ** 2) ** 0.5;
 }
 
-const getVectorLength = (x, y, z) => {
-  return (x ** 2 + y ** 2 + z ** 2) ** 0.5;
-};
+const getVectorLength = (x, y, z) => (x ** 2 + y ** 2 + z ** 2) ** 0.5;
 
 function cleanInput(string) {
   return string.toLowerCase().trim();
 }
-const cleanInput = (string) => {
-  return string.toLowerCase().trim();
-};
+const cleanInput = (string) => string.toLowerCase().trim();
+
 /*
 Rewrite the following arrow functions as classic functions.
 */
