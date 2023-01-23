@@ -18,3 +18,7 @@ console.log('submit event fired: ', event)
 }); <!-- to add an eventlistener you always need an document.queryselector that tells you where you wanna have the eventlistener done-->
 
 <!-- the (event) you need it if you wanna see the result of your eventlistener, in this case the data of your submit button!! if you leave it empty nothing in console.log is shown-->
+
+name.toUpperCase() <!-- name is a string from a variable but it could work also with 'hello', as long is a string>
+.touppercase() is a method which means is a function that JS provide
+function is something we writing
