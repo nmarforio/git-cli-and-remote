@@ -1,6 +1,6 @@
 <label for="name">
 <input name= "name" type="text"/>
-<button type="submit">Submit 
+<button type="submit">Submit always inside the html <form> 
 <!--when you submit button is creating in the browser a request, we are gonna learn not to, and use the specific data for us -->
 
 In Head <script defer src= javascript.js> DEFER means to execute the JS after reading all html!
@@ -17,4 +17,9 @@ console.log('submit event fired: ', event)
 <!-- the (event) you need it if you wanna see the result of your eventlistener, in this case the data of your submit button!! if you leave it empty nothing in console.log is shown-->
 
 <h1 title ="party">hello</h1>
-<form aria-labelledby = "title"> <!-- the title h1 element is now connected with the form aria-label for accessibility>
+<form aria-labelledby = "title"> the title h1 element is now connected with the form aria-label for accessibility
+
+label for="name"
+input id="name <!-- this is the connection on the website if you click on the label and the input is focus always for and id-->
+input required (when you want absolutely the data)
+input checked (is the radio or checkbox already selected prevalue)

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>HTML Zoo Form</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <section aria-label="contact">
+      <h2 id="form-heading">Zoo Visitor Sign Up</h2>
+      <p id="form-description">
+        Please provide all necessary information on your stay with us.
+      </p>
+
+      <form aria-labelledby="form-heading" aria-describedby="form-description">
+        <fieldset>
+          <legend>Enter your information</legend>
+
+          <!-- Email: label & input -->
+          <label for="email">Email: </label>
+          <input type="email" name="email" id="email" />
+
+          <!-- Date: label & input -->
+          <label for="date">Date:</label>
+          <input type="date" name="date" id="date" />
+
+          <fieldset class="radio-options">
+            <!-- Radio Buttons: labels & inputs -->
+            <legend>Which one of these animals would you like to visit?</legend>
+            <label for="delfin">Delfin</label>
+            <input type="radio" name="animals" id="delfin" />
+            <label for="sea-star">Sea-Start</label>
+          </fieldset>
+
+          <!-- Textarea: label & input -->
+          <label for="text">Textarea</label>
+          <input type="textarea" name="text" id="text" />
+
+          <!-- Two Checkboxes: labels & inputs -->
+          <label for="cb">Checkboxes1</label>
+          <input type="checkbox" name="cb" id="cb" />
+          <label for="cb">Checkboxes2</label>
+          <input type="checkbox" name="cb" id="cb" />
+
+          <!-- Two Buttons: reset & submit -->
+        </fieldset>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
