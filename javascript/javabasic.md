@@ -22,3 +22,36 @@ console.log('submit event fired: ', event)
 name.toUpperCase() <!-- name is a string from a variable but it could work also with 'hello', as long is a string>
 .touppercase() is a method which means is a function that JS provide
 function is something we writing
+
+arrays are order!
+bla = [1,2,3]
+bla.push(4) <!-- i put the number 4 at the last position in the array>
+bla.pop()<!-- i delete the last number in the array () parentesis immer empty>
+
+object {
+name: 'martin',
+occupation: 'developer',
+}
+object do not have an order, to point a specific element:
+
+object['name'] <!-- Martin-->
+object.name <!--Martin-->
+object.name = 'jan' <!--Now the name is jan>
+object.number = 4 <!--now the object has a number 4 {number: 4,}>
+delete object.name <!-- Martin is now gone>
+
+const people = [
+{
+name: "john",
+age:23,
+car: [bmw,mercedes,..],
+},
+{
+name:"alex",
+age:34,
+},
+];
+
+people[0].name <!--John>
+people[1].dog = 'rufus' <!-- the second object has dog rufus>
+people.car.push('VW') <!-- Now car array has VW inside>
