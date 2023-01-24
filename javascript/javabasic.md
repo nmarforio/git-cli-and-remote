@@ -14,9 +14,10 @@ const form = document.queryselector <!-- query selector is giving you an informa
 const form = document.queryselector('[data-js="first-form"]')<!-- inside [square brakets] is the exact name of the element you wanna select wiht the queryselector!! THE NAME IS IN HTML -->
 
 form.addEventlistener('submit', (event) =>{
+    event.preventDefault()
 console.log('submit event fired: ', event)
 }); <!-- to add an eventlistener you always need an document.queryselector that tells you where you wanna have the eventlistener done-->
-
+event.target.elements is givin us the opportunity to select the data we want in the form exemple submiton 
 <!-- the (event) you need it if you wanna see the result of your eventlistener, in this case the data of your submit button!! if you leave it empty nothing in console.log is shown-->
 
 name.toUpperCase() <!-- name is a string from a variable but it could work also with 'hello', as long is a string>
