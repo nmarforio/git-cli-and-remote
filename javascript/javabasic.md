@@ -18,6 +18,7 @@ event.preventDefault()
 console.log('submit event fired: ', event)
 }); <!-- to add an eventlistener you always need an document.queryselector that tells you where you wanna have the eventlistener done-->
 event.target.elements is givin us the opportunity to select the data we want in the form exemple submiton
+event.target.document === form.document
 
 <!-- the (event) you need it if you wanna see the result of your eventlistener, in this case the data of your submit button!! if you leave it empty nothing in console.log is shown-->
 
@@ -25,8 +26,9 @@ const newcard = document.createElement('section')<!--HTML section>
 cardcontainer.append(newcard) <!-- first create the element then appending it in the DOM>
 cosnt cardtext = textInput.value
 newcard.textcontent = cardtext (which is the value)
-newcard.innerHTML = <div class="product__body"> <!-- Copy Paste from HTML and add the ${variable}-->
+newcard.innerHTML =
 
+<div class="product__body"> <!-- Copy Paste from HTML and add the ${variable}-->
 <div class="product__text-container">
 <h2 class="product__name">${name}</h2>
       <ul class="product__categories">
