@@ -83,3 +83,41 @@ age:34,
 people[0].name <!--John>
 people[1].dog = 'rufus' <!-- the second object has dog rufus>
 people.car.push('VW') <!-- Now car array has VW inside>
+
+LOOPS:
+
+while loop: the condition has to be inside of the block
+
+let number = 5;
+while (number > 0){
+number -= 1;
+};
+
+for loop:
+
+for (let count = 0; count < 5; count +=1){
+conosle.log (Hello);
+}
+result: 5 x Hello
+
+count = 0 <!--before looping start is the declaratin>
+count < 5 <!--Condition is the count < 5 ? true fals or if statement -->
+count +=1 <!--What we wanna do everytime at the end of the loop>
+
+for-of: Loop for Array
+const fruits = ['apple', 'mango','pomegranate','nut']
+for every(const fruit of fruits){
+console.log(fruit)
+}
+fruit is a variable is creating every time the loop is running
+the variable fruit is exsiting only inside the loop!!!!
+
+for-in: loop for Object
+const pet = {
+name: 'adf';
+species: 'af';
+}
+for(const key in pet){
+const value = pet[key];
+console.log(${key} is ${value}) <!--so you see the kye (name,species,etc) and value is the [kye]-->
+}
