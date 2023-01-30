@@ -121,3 +121,21 @@ for(const key in pet){
 const value = pet[key];
 console.log(${key} is ${value}) <!--so you see the kye (name,species,etc) and value is the [kye]-->
 }
+
+forEach, map, filter <!-- only working for ARRAY>
+
+array1.forEach <!-- alwasy first the name of the array.map or forEach or filter>
+you cannot return from forEach
+
+map changes every element in arrays and you must return.
+
+filter is sorting the element in the array and return it!
+always return true or false creates a new array
+
+const uppercasegame2000 = games
+.filter(game =>{
+return game.year < 2000 <!-- you can do .map after the first interaction cause the result after a filter is a array>
+})
+.map(game =>{
+retunr game.name.toUpperCase()
+})
