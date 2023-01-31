@@ -139,3 +139,7 @@ return game.year < 2000 <!-- you can do .map after the first interaction cause t
 .map(game =>{
 retunr game.name.toUpperCase()
 })
+
+type = module
+import in js {autori} from './author.js'
+import

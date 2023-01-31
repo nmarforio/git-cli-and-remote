@@ -71,16 +71,12 @@ const recipesThatOnlyTake60minutesOrLess = recipes.filter((recipe) => {
 });
 
 const allRecipesWithMoreThan2Servings = recipes.filter((recipe) => {
-  return recipe.servings >= "2";
+  return recipe.servings > "2";
 });
 
-const allRecipesWithTitlesLongerThan12Characters = recipes
-  .map((recipe) => {
-    return recipe.title;
-  })
-  .filter((title) => {
-    return title.length > "12";
-  });
+const allRecipesWithTitlesLongerThan12Characters = recipes.map((recipe) => {
+  return recipe.title.length > 12;
+});
 
 export {
   onlyTitles,
