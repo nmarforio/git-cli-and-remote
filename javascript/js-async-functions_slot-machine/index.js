@@ -46,6 +46,8 @@ spinButton.addEventListener("click", async () => {
     result.setResult(points);
   } catch {
     result.setMachineChoked();
+  } finally {
+    spinButton.disabled = false;
   }
 
   /**
@@ -88,8 +90,6 @@ spinButton.addEventListener("click", async () => {
    * and make sure it is always executed after the wheels have stopped,
    * even if an error was thrown.
    */
-
-  spinButton.disabled = false;
 });
 
 /**
