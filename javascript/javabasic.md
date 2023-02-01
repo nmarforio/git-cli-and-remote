@@ -140,6 +140,21 @@ return game.year < 2000 <!-- you can do .map after the first interaction cause t
 retunr game.name.toUpperCase()
 })
 
+.includes() <!-- works pretty good with string array or number array or boolean>
+.indexof() <!-- is giving us the index position>
+.lastindexof() <!-- last of the string index number>
+.find() <!-- for object, need a return true or false after returning true is stops>
+.findindex()
+
+stundent.sort((stundendA,stundentB) => {
+sort needs two parameters to be compaired
+return 1 or -1 or 0 if you wanna to keep the same order in the array if you have two same parameters
+sort is by a specific parameters if not is alphabetic and number by ascenden way
+});
+.slice()<!-- copy of the all array>
+.some ()<!-- return true or false>
+.every()<!-- return also true or flase>
+
 type = module
 import in js {autori} from './author.js'
 import
