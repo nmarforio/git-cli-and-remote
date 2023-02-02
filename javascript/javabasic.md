@@ -157,4 +157,19 @@ sort is by a specific parameters if not is alphabetic and number by ascenden way
 
 type = module
 import in js {autori} from './author.js'
-import
+export is exporting lots of infos / default export this one is exporting onli the specific function or object
+
+async function badJoke()
+try{
+fetch with await quindi async!
+const response = await fetch ('apiurl') <!-- This data are the row data like status, response, header etc>
+
+if (!response.ok){
+console.error('bad response')
+} else {
+const jokedata = await response.json() <!-- This data is actually the data in the browser in this caese the joke we wanna use>
+conosle.log(jokedata)
+}
+}catch (err) {  
+}
+JSON = javascript object notation
