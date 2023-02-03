@@ -173,3 +173,27 @@ conosle.log(jokedata)
 }catch (err) {  
 }
 JSON = javascript object notation
+
+destructuring:
+Object!
+const request = {
+method: GET,
+url: www.hal.com
+}
+const { method, url, body = 'lala'} = request <!-- is creating new variable with the parameter from the object of the request and you can do it in one line>
+
+ <!-- inside of this curlybrakets, body is define as lala if we have body in the original object is gonna take the value of the original one!-->
+
+Array!
+const animal = [Lion, tiger, penguin, bear]
+const [first] = animals <!--LION--> you cannot use numbers [,,] use comas to refer to the second or third element
+const [, second ='tiger'] if isnt define in the original arrays you can do it so, but isnt change the original arrays
+
+rest syntsax ...
+const req = {
+url: a
+method: b
+body : c
+}
+const {url, ...info} = req <!-- info now is method and body vaule--> the 3 dots always at the end
+const req2 = {...req, body : 'Body'} now the value of body is Body in this new one
