@@ -11,27 +11,30 @@ export default function App() {
     latitude: 0,
   });
 
-  useEffect(() => {
-    async function getISSCoords() {
-      try {
-        const response = await fetch(URL);
-        const data = await response.json();
-        console.log(data);
-        setCoords(data);
-      } catch (error) {
-        console.log(error);
-      }
+  async function getISSCoords() {
+    try {
+      const response = await fetch(URL);
+      const data = await response.json();
+      console.log(data);
+      setCoords(data);
+    } catch (error) {
+      console.log(error);
     }
-    let intervalID = setInterval(getISSCoords, 5000);
+  }
+  let intervalID;
+  useEffect(() => {
+    if (!intervalID) {
+      setInterval(getISSCoords, 5000);
+    }
     return clearInterval(intervalID);
-  }, [coords]);
+  }, [intervalID]);
   return (
     <main>
       <Map longitude={coords.longitude} latitude={coords.latitude} />
       <Controls
         longitude={coords.longitude}
         latitude={coords.latitude}
-        onRefresh={() => setCoords(coords)}
+        onRefresh={getISSCoords}
       />
     </main>
   );

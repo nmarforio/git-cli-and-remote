@@ -22,10 +22,10 @@ export default function PokemonList() {
 
   return (
     <main>
-      <button onClick={() => setPage(page - 1)} type="button">
+      <button onClick={() => setPage(page === 0 ? 0 : page - 20)} type="button">
         Previous Page
       </button>
-      <button onClick={() => setPage(page + 1)} type="button">
+      <button onClick={() => setPage(page + 20)} type="button">
         Next Page
       </button>
       <ul>
