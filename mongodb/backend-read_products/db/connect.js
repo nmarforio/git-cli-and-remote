@@ -1,7 +1,6 @@
 import mongoose from "mongoose";
 
 const MONGODB_URI =
-  "mongodb+srv://nmarforio:AWIoZ5WyEUw8QVv4@cluster0.eg4gypf.mongodb.net/fish-shop";
 
 if (!MONGODB_URI) {
   throw new Error(
