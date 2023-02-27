@@ -12,7 +12,7 @@ export default function Product() {
   if (!data) {
     return <h1>Loading...</h1>;
   }
-
+  console.log(data);
   return (
     <ProductCard>
       <h2>{data.name}</h2>
